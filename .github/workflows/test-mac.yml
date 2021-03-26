@@ -1,0 +1,15 @@
+name: macos
+
+on: [push]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        platform: [macos-latest]
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: CI
+      run: make -f macos.mk ci

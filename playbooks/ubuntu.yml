@@ -1,0 +1,36 @@
+---
+- name: playbook for development environment
+  hosts: all
+  vars:
+    go_version: 1.16.2
+    node_version: 14.x
+  roles:
+  - role: gantsign.golang
+    become: yes
+    golang_version: '{{ go_version }}'
+    golang_install_dir: '/opt/go/{{ go_version }}'
+  - role: geerlingguy.nodejs
+    become: yes
+    nodejs_version: '{{ node_version }}'
+  tasks:
+  - name: create symbolic link for pip
+    become: yes
+    file:
+      src: "/usr/bin/pip3"
+      dest: "/usr/bin/pip"
+      state: link
+      force: yes
+  # ln -fns /opt/go/{{ go_version }}/bin/go /usr/local/bin/go
+  - name: create symbolic link for Go {{ go_version }}
+    become: yes
+    file:
+      src: "/opt/go/{{ go_version }}/bin/go"
+      dest: "/usr/local/bin/go"
+      state: link
+  # ln -fns /usr/bin/python3 /usr/local/bin/python
+  - name: create symbolic link for Python
+    become: yes
+    file:
+      src: "/usr/bin/python3"
+      dest: "/usr/local/bin/python"
+      state: link

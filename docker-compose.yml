@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  ubuntu:
+    build:
+      context: .
+      dockerfile: ./docker/ubuntu/Dockerfile
+      args:
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTPS_PROXY}
+      - WORK_DIR=${WORK_DIR}
+    container_name: ubuntu
+    volumes:
+    - ./:${WORK_DIR}
+    environment:
+    - HTTP_PROXY=${HTTP_PROXY}
+    - HTTPS_PROXY=${HTTPS_PROXY}
+    networks:
+    - shared-network
+    tty: true
+  plantuml:
+    image: plantuml/plantuml-server
+    ports:
+    - ${PLANTUML_PORT}:8080
+    tty: true
+    restart: always
+networks:
+  shared-network:
+    external: true
