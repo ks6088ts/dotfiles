@@ -58,7 +58,7 @@ install-sh: ## install via shell script
 
 .PHONY: install-rc
 install-rc: ## install run configs
-	cp rc/.zshrc ~/.zshrc
+	cp rc/.ubuntu.zshrc ~/.zshrc
 
 .PHONY: ci
 ci: install ## ci test
