@@ -13,7 +13,7 @@ go get -u -v \
 # textlint
 # https://qiita.com/takasp/items/22f7f72b691fda30aea2
 # https://qiita.com/munieru_jp/items/83c2c44fcadb177d2806
-sudo npm install -g \
+npm install -g \
     yarn \
     serverless \
     create-react-app \

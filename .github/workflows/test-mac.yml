@@ -11,5 +11,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+    - name: Uninstall default go
+      run: brew uninstall go@1.15
     - name: CI
       run: make -f macos.mk ci

@@ -6,24 +6,32 @@ help:
 
 # https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
 .PHONY: install
-install: install-sh install-brew install-brew-cask install-rc ## install
+install: install-brew install-brew-cask install-sh install-rc ## install
 
 .PHONY: install-sh
 install-sh: ## install via shell script
 	sh scripts/install-macos.sh
+	sh scripts/install-vscode-extensions.sh
 
 .PHONY: install-brew
 install-brew: ## install brew
+	brew tap soracom/soracom-cli
 	brew install \
-		make \
 		ansible \
 		curl \
+		gh \
 		git \
+		go@1.16 \
 		jq \
-		mosquitto \
-		peco \
+		kubectl \
 		libpq \
+		make \
+		mosquitto \
+		node@14 \
+		npm \
+		peco \
 		python@3.8 \
+		soracom-cli \
 		tmux \
 		unzip \
 		zip \
@@ -41,7 +49,7 @@ install-brew-cask: ## install brew cask
 
 .PHONY: install-rc
 install-rc: ## install run configs
-	# cp rc/.zshrc ~/.zshrc
+	cp rc/.macos.zshrc ~/.zshrc
 
 .PHONY: ci
 ci: install ## ci test
