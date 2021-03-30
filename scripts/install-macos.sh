@@ -1,5 +1,8 @@
 #!/bin/sh
 
+ln -fns /usr/local/opt/python@3.8/bin/pip3.8 /usr/local/opt/python@3.8/bin/pip
+ln -fns /usr/local/opt/python@3.8/bin/python3.8 /usr/local/opt/python@3.8/bin/python
+
 # Install brew: https://brew.sh/
 brew --version &> /dev/null
 if [ $? -ne 0 ] ; then
