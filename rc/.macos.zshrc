@@ -86,6 +86,7 @@ zinit light direnv/direnv
 
 alias gitp='git push origin `git rev-parse --abbrev-ref HEAD`'
 alias k=kubectl
+alias s=soracom
 
 # ---
 # environment variables
