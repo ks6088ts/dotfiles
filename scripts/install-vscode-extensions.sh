@@ -18,6 +18,8 @@ extensions=(
   hediet.vscode-drawio
   jebbs.plantuml
   taichi.vscode-textlint
+  bierner.markdown-mermaid
+  bpruitt-goddard.mermaid-markdown-syntax-highlighting
   # Infrastructure
   ms-azuretools.vscode-docker
   ms-kubernetes-tools.vscode-kubernetes-tools
