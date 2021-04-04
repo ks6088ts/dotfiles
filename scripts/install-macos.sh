@@ -16,7 +16,8 @@ go get -u -v \
     github.com/x-motemen/ghq \
     golang.org/x/tools/... \
     google.golang.org/protobuf/cmd/protoc-gen-go \
-    google.golang.org/grpc/cmd/protoc-gen-go-grpc
+    google.golang.org/grpc/cmd/protoc-gen-go-grpc \
+    github.com/mikefarah/yq/v4
 
 # textlint
 # https://qiita.com/takasp/items/22f7f72b691fda30aea2
@@ -47,3 +48,5 @@ gh completion -s zsh | sudo tee /usr/local/share/zsh/site-functions/_gh
 soracom completion zsh | sudo tee /usr/local/share/zsh/site-functions/_soracom
 # kubectl: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#completion
 kubectl completion zsh | sudo tee /usr/local/share/zsh/site-functions/_kubectl
+# yq: https://mikefarah.gitbook.io/yq/v/v4.x/commands/shell-completion#zsh
+yq shell-completion zsh | sudo tee /usr/local/share/zsh/site-functions/_yq
