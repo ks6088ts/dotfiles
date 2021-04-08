@@ -25,6 +25,7 @@ install-brew: ## install brew
 		jq \
 		kubectl \
 		libpq \
+		libusb \
 		make \
 		mosquitto \
 		node@14 \
@@ -46,6 +47,7 @@ install-brew-cask: ## install brew cask
 		iterm2 \
 		sourcetree \
 		docker \
+		arduino \
 
 .PHONY: install-rc
 install-rc: ## install run configs

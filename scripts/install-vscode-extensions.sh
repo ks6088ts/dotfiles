@@ -48,6 +48,8 @@ extensions=(
   dbaeumer.vscode-eslint
   esbenp.prettier-vscode
   apollographql.vscode-apollo
+  # IDE
+  vsciot-vscode.vscode-arduino
 )
 
 for i in ${extensions[@]}; do
