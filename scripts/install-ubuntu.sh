@@ -24,7 +24,8 @@ npm install -g \
     textlint-rule-preset-ja-spacing \
     textlint-rule-preset-ja-technical-writing \
     textlint-rule-spellcheck-tech-word \
-    textlint-rule-prh
+    textlint-rule-prh \
+    @google/clasp
 
 mkdir -p outputs
 
