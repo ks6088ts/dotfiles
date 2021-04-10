@@ -28,6 +28,7 @@ npm install -g \
     create-react-app \
     create-next-app \
     @aws-amplify/cli \
+    aws-cdk \
     textlint \
     textlint-rule-preset-ja-spacing \
     textlint-rule-preset-ja-technical-writing \
