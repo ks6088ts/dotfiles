@@ -12,12 +12,12 @@ fi
 # Install zinit: https://github.com/zdharma/zinit#option-1---automatic-installation-recommended
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
-go get -u -v \
-    github.com/x-motemen/ghq \
-    golang.org/x/tools/... \
-    google.golang.org/protobuf/cmd/protoc-gen-go \
-    google.golang.org/grpc/cmd/protoc-gen-go-grpc \
-    github.com/mikefarah/yq/v4
+go install \
+    github.com/x-motemen/ghq@latest \
+    golang.org/x/tools/gopls@latest \
+    google.golang.org/protobuf/cmd/protoc-gen-go@latest \
+    google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest \
+    github.com/mikefarah/yq/v4@latest
 
 # textlint
 # https://qiita.com/takasp/items/22f7f72b691fda30aea2
