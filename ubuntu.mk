@@ -30,6 +30,7 @@ install-apt: ## install via apt
 		git \
 		jq \
 		mosquitto-clients \
+		netcat \
 		peco \
 		postgresql-client \
 		python3-pip \

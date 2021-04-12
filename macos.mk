@@ -28,6 +28,7 @@ install-brew: ## install brew
 		libusb \
 		make \
 		mosquitto \
+		netcat \
 		node@14 \
 		npm \
 		peco \
