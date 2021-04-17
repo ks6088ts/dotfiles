@@ -33,6 +33,7 @@ install-apt: ## install via apt
 		netcat \
 		peco \
 		postgresql-client \
+		protobuf-compiler \
 		python3-pip \
 		software-properties-common \
 		sudo \

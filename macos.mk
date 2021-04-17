@@ -32,6 +32,7 @@ install-brew: ## install brew
 		node@14 \
 		npm \
 		peco \
+		protobuf \
 		python@3.8 \
 		soracom-cli \
 		tmux \
