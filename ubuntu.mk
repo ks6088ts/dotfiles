@@ -39,6 +39,7 @@ install-apt: ## install via apt
 		sudo \
 		tmux \
 		unzip \
+		wget \
 		zip \
 		zsh \
 

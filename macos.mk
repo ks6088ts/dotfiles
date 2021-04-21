@@ -37,6 +37,7 @@ install-brew: ## install brew
 		soracom-cli \
 		tmux \
 		unzip \
+		wget \
 		zip \
 		zsh \
 
