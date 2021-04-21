@@ -1,33 +1,5 @@
 #!/bin/sh
 
-# Install zinit: https://github.com/zdharma/zinit#option-1---automatic-installation-recommended
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
-
-# gRPC
-go install \
-    github.com/x-motemen/ghq@latest \
-    golang.org/x/tools/gopls@latest \
-    google.golang.org/protobuf/cmd/protoc-gen-go@latest \
-    google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest \
-    github.com/mikefarah/yq/v4@latest
-
-# textlint
-# https://qiita.com/takasp/items/22f7f72b691fda30aea2
-# https://qiita.com/munieru_jp/items/83c2c44fcadb177d2806
-npm install -g \
-    yarn \
-    serverless \
-    create-react-app \
-    create-next-app \
-    @aws-amplify/cli \
-    aws-cdk \
-    textlint \
-    textlint-rule-preset-ja-spacing \
-    textlint-rule-preset-ja-technical-writing \
-    textlint-rule-spellcheck-tech-word \
-    textlint-rule-prh \
-    @google/clasp
-
 mkdir -p outputs
 
 # AWS CLI
@@ -71,13 +43,3 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 cd -
 
 rm -rf outputs
-
-# Completion
-# gh: https://cli.github.com/manual/gh_completion
-gh completion -s zsh | sudo tee /usr/local/share/zsh/site-functions/_gh
-# soracom: https://github.com/soracom/soracom-cli/blob/master/README_ja.md
-soracom completion zsh | sudo tee /usr/local/share/zsh/site-functions/_soracom
-# kubectl: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#completion
-kubectl completion zsh | sudo tee /usr/local/share/zsh/site-functions/_kubectl
-# yq: https://mikefarah.gitbook.io/yq/v/v4.x/commands/shell-completion#zsh
-yq shell-completion zsh | sudo tee /usr/local/share/zsh/site-functions/_yq
