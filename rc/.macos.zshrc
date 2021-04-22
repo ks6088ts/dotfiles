@@ -123,6 +123,16 @@ GIT_USER_EMAIL = ${GIT_USER_EMAIL}
 EOS
 
 # ---
+# Android
+# ---
+
+export ANDROID_SDK_ROOT=~/Library/Android/sdk
+export PATH=$ANDROID_SDK_ROOT/platform-tools:$PATH
+export PATH=$ANDROID_SDK_ROOT/tools:$PATH
+export PATH=$ANDROID_SDK_ROOT/tools/bin:$PATH
+export PATH=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home/bin:$PATH
+
+# ---
 # auto complete
 # ---
 
