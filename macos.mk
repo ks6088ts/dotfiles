@@ -29,6 +29,7 @@ install-brew: ## install brew
 		make \
 		mosquitto \
 		netcat \
+		ngrok \
 		node@14 \
 		npm \
 		peco \
