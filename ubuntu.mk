@@ -40,6 +40,7 @@ install-apt: ## install via apt
 		tmux \
 		unzip \
 		wget \
+		youtube-dl \
 		zip \
 		zsh \
 

@@ -39,6 +39,7 @@ install-brew: ## install brew
 		tmux \
 		unzip \
 		wget \
+		youtube-dl \
 		zip \
 		zsh \
 
