@@ -118,6 +118,9 @@ export PATH=$PATH:$GOPATH/bin
 # python
 export PATH=$PATH:~/.local/bin
 
+# rust
+export PATH=$HOME/.cargo/bin:$PATH
+
 # git
 export GIT_USER_NAME=ks6088ts
 export GIT_USER_EMAIL=ks6088ts@gmail.com

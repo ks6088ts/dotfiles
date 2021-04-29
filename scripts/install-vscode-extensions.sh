@@ -40,6 +40,7 @@ extensions=(
   golang.go
   # Rust
   rust-lang.rust
+  matklad.rust-analyzer
   # Python
   ms-python.python
   ms-python.vscode-pylance
