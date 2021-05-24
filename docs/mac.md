@@ -1,7 +1,8 @@
 # settings
 
 - トラックパッドのスクロールの方向: ナチュラル
-- Caps LockをControlにする
+- Caps Lock を Control にする
+- [Mac に Node.js をインストール（anyenv + nodenv 編）](https://qiita.com/kyosuke5_20/items/eece817eb283fc9d214f)
 
 # ツール
 

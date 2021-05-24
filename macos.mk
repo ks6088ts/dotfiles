@@ -18,6 +18,7 @@ install-brew: ## install brew
 	brew tap soracom/soracom-cli
 	brew install \
 		ansible \
+		anyenv \
 		curl \
 		gh \
 		git \

@@ -95,6 +95,7 @@ alias s=soracom
 # common
 # export http_proxy=
 # export https_proxy=
+eval "$(anyenv init -)"
 
 # golang
 export GOROOT=$(go env GOROOT)
