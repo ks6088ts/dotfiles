@@ -20,6 +20,7 @@ extensions=(
   taichi.vscode-textlint
   bierner.markdown-mermaid
   bpruitt-goddard.mermaid-markdown-syntax-highlighting
+  marp-team.marp-vscode
   # Infrastructure
   ms-azuretools.vscode-docker
   ms-kubernetes-tools.vscode-kubernetes-tools
