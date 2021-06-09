@@ -15,7 +15,8 @@ install-sh: ## install via shell script
 
 .PHONY: install-brew
 install-brew: ## install brew
-	brew tap soracom/soracom-cli
+	brew tap hashicorp/tap && brew install hashicorp/tap/terraform
+	brew tap soracom/soracom-cli && brew install soracom-cli
 	brew install \
 		ansible \
 		anyenv \
@@ -36,7 +37,6 @@ install-brew: ## install brew
 		peco \
 		protobuf \
 		python@3.8 \
-		soracom-cli \
 		tmux \
 		unzip \
 		wget \

@@ -25,6 +25,7 @@ extensions=(
   ms-azuretools.vscode-docker
   ms-kubernetes-tools.vscode-kubernetes-tools
   amazonwebservices.aws-toolkit-vscode
+  hashicorp.terraform
   # Visual
   oderwat.indent-rainbow
   ibm.output-colorizer

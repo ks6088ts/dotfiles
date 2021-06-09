@@ -14,3 +14,5 @@ kubectl completion zsh | sudo tee /usr/local/share/zsh/site-functions/_kubectl
 yq shell-completion zsh | sudo tee /usr/local/share/zsh/site-functions/_yq
 # poetry: https://python-poetry.org/docs/#enable-tab-completion-for-bash-fish-or-zsh
 poetry completions zsh | sudo tee /usr/local/share/zsh/site-functions/_poetry
+# terraform: https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started#enable-tab-completion
+terraform -install-autocomplete
