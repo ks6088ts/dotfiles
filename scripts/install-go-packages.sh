@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # gRPC
-go install \
+go get -v \
     github.com/x-motemen/ghq@latest \
     golang.org/x/tools/gopls@latest \
     google.golang.org/protobuf/cmd/protoc-gen-go@latest \
