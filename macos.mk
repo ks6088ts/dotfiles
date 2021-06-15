@@ -21,6 +21,7 @@ install-brew: ## install brew
 		ansible \
 		anyenv \
 		arp-scan \
+		cmake \
 		curl \
 		gh \
 		git \
