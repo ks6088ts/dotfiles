@@ -87,6 +87,7 @@ zinit light direnv/direnv
 alias gitp='git push origin `git rev-parse --abbrev-ref HEAD`'
 alias k=kubectl
 alias s=soracom
+alias mytask="club find --quiet --owner shinji --state 'Started' --format $'%id\t%t\n\t%u\n\t%epic'"
 
 # ---
 # environment variables
