@@ -65,6 +65,7 @@ install-brew-cask: ## install brew cask
 		sourcetree \
 		docker \
 		arduino \
+		vlc \
 
 .PHONY: install-rc
 install-rc: ## install run configs
