@@ -13,8 +13,17 @@ install-sh: ## install via shell script
 	sh scripts/install-macos.sh
 	sh scripts/install-vscode-extensions.sh
 
+.PHONY: install-gstreamer
+install-gstreamer: ## install gstreamer
+	brew install \
+		gstreamer \
+		gst-plugins-base \
+		gst-plugins-good \
+		gst-plugins-bad \
+		gst-plugins-ugly \
+
 .PHONY: install-brew
-install-brew: ## install brew
+install-brew: install-gstreamer ## install brew
 	brew tap hashicorp/tap && brew install hashicorp/tap/terraform
 	brew tap soracom/soracom-cli && brew install soracom-cli
 	brew install \
