@@ -35,6 +35,7 @@ install-brew: install-gstreamer ## install brew
 		gh \
 		git \
 		go@1.16 \
+		iproute2mac \
 		jq \
 		kubectl \
 		libpq \
@@ -51,6 +52,7 @@ install-brew: install-gstreamer ## install brew
 		tmux \
 		unzip \
 		wget \
+		wireguard-tools \
 		youtube-dl \
 		zip \
 		zsh \
