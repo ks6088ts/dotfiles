@@ -32,6 +32,7 @@ install-brew: install-gstreamer ## install brew
 		arp-scan \
 		cmake \
 		curl \
+		flutter \
 		gh \
 		git \
 		go@1.16 \
