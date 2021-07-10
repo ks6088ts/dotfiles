@@ -10,6 +10,7 @@ rustup component add \
 cargo install \
     bottom \
     cargo-edit \
+    evcxr_repl \
     tealdeer
 
 # tldr
